@@ -1,5 +1,5 @@
 .main-wrapper {
-  min-height: 105vh;
+  /* min-height: 105vh; */
   padding-left: 16px;
   padding-right: 16px;
   position: relative;
@@ -96,6 +96,9 @@
 }
 
 .input-wrap {
+  max-width: 420px;
+  width: 370px;
+  transition: 0.3s;
   background-color: rgba(255, 255, 255, 0.1);
   height: 40px;
   border-radius: 99999px;
@@ -103,6 +106,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.search {
+  width: 100%;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+input.search::placeholder {
+  font-size: 20px;
+}
+
+input.search::-webkit-input-placeholder {
+  font-size: 20px;
 }
 
 input.search {
@@ -126,13 +143,10 @@ input.search:focus ~ .place-holder-custom {
   position: relative;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
-.search {
-  width: 370px;
-}
-
-.place-holder-custom {
+/* .place-holder-custom {
   position: absolute;
   top: 0;
   width: 100%;
@@ -143,7 +157,10 @@ input.search:focus ~ .place-holder-custom {
   z-index: -1;
   font-size: 20px;
   margin-left: 10px;
-}
+  color: #888e98;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+} */
 
 .search-icon {
   padding: 8px 16px;
@@ -219,15 +236,36 @@ input.search:focus ~ .place-holder-custom {
   left: 0;
 }
 
+/* custome slicks dot */
 .movie .slick-dots {
   height: 100%;
   display: flex !important;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: flex-start;
   z-index: 99 !important;
+  padding-top: 300px;
 }
 
 .movie .slick-dots li button:before {
-  font-size: 14px !important;
+  font-size: 10px !important;
+  width: 16px;
+  height: 16px;
+  padding-top: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  color: #5a5c5e;
+}
+
+.movie .slick-dots li.slick-active button:before {
+  color: #ea6016;
+  border: 1px solid #ea6016;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.movie .slick-dots li {
+  margin: 0 100px !important;
 }
