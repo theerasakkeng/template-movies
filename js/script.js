@@ -29,3 +29,15 @@ document.addEventListener("scroll", (event) => {
       "linear-gradient(to bottom,#242424,#242424 0%,transparent 100%)";
   }
 });
+
+//openide menu
+const openSideMenu = () => {
+  let elemSideMenu = document.querySelector(".side-bar");
+  let elemOpenMenu = document.querySelector(".side-bar.open");
+  if (elemSideMenu) {
+    elemSideMenu.classList.add("open");
+  }
+  if (elemOpenMenu) {
+    elemOpenMenu.classList.remove("open");
+  }
+};
