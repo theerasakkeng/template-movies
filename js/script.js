@@ -3,7 +3,15 @@ $(".movie").slick({
   dots: true,
   arrows: false,
   infinite: true,
-  autoplay: true,
+  autoplay: false,
+  speed: 800,
+  fade: true,
+});
+
+$(".rank").slick({
+  slidesToShow: 7,
+  arrows: true,
+  infinite: false,
 });
 
 //check focu search input

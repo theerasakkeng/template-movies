@@ -387,20 +387,83 @@ input.search:focus ~ .place-holder-custom {
   height: 100%;
 }
 
-.movie::after {
+.movie-slider-item::before {
   content: "";
   position: absolute;
   background: radial-gradient(
-    ellipse,
-    hsla(0, 0%, 8%, 0.3) 5%,
-    hsla(0, 0%, 8%, 0.35) 18%,
-    hsla(0, 0%, 8%, 0.85) 70%
-  );
+      ellipse,
+      hsl(0deg 0% 8% / 0%) 80%,
+      hsl(0deg 0% 8% / 50%) 90%,
+      hsl(0deg 0% 8%) 100%
+    ),
+    radial-gradient(
+      ellipse,
+      hsla(0, 0%, 8%, 0.3) 5%,
+      hsla(0, 0%, 8%, 0.35) 18%,
+      hsla(0, 0%, 8%, 0.85) 70%
+    );
   z-index: 9;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.movie-slider-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.movie-slider-item > img {
+  width: 100%;
+  height: 100%;
+}
+
+.sub-banner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.sub-banner > img {
+  max-height: 150px;
+  margin-top: -150px;
+}
+
+.years {
+  margin-top: 20px;
+  color: #bcbcbc;
+}
+
+.years > span {
+  color: #ffffff;
+}
+
+.button-detail {
+  margin-top: 10px;
+  padding: 10px 1.25rem;
+  border-radius: 4px;
+  background-size: 200% auto;
+  background-image: linear-gradient(90deg, #ff8800, #ea3c2a 50%, #ff8800),
+    linear-gradient(90deg, #f80, #ea3c2a 50%, #f80);
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .sub-banner > img {
+    max-height: 120px;
+    margin-top: 0px;
+  }
 }
 
 /* custome slicks dot */
@@ -435,4 +498,30 @@ input.search:focus ~ .place-holder-custom {
 
 .movie .slick-dots li {
   margin: 0 100px !important;
+}
+
+.rank-wrap {
+  margin-top: -100px;
+}
+
+.header-text-wrap {
+  position: relative;
+  padding-left: 20px;
+  margin: 28px 0 20px 0;
+}
+
+.text-header::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 30px;
+  background: linear-gradient(180deg, #f80, #ea3c2a);
+  border-radius: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.rank img {
+  margin: 0 10px;
 }
