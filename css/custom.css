@@ -241,6 +241,72 @@ input.search:focus ~ .place-holder-custom {
   cursor: pointer;
 }
 
+/* navbar mobile top */
+.nav-bar-mobile-top-wrap {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  height: 52px;
+  padding: 0 1rem;
+  background-color: hsla(0, 0%, 9%, 0.9);
+}
+
+.nav-bar-mobile-top {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* navbar mobile bottom */
+.nav-bar-mobile-bottom-wrap {
+  display: none;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+}
+
+.nav-bar-mobile-bottom {
+  width: 100%;
+  height: 72px;
+  display: flex;
+  flex: 1 1 0% !important;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 9px;
+  background-color: #242424;
+  padding: 4px;
+}
+
+.nav-bar-item {
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .nav-wrap {
+    display: none;
+  }
+
+  .nav-bar-mobile-bottom-wrap {
+    display: block;
+  }
+
+  .nav-bar-mobile-top-wrap {
+    display: block;
+  }
+}
+
 /* menu sidebar */
 .menu-sidebar > img {
   width: 40px;
