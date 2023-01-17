@@ -1,9 +1,18 @@
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: unset !important;
+}
+
 .avoidMaxWidthFullBody {
   max-width: none;
 }
 
 .main-wrapper {
-  /* min-height: 105vh; */
+  min-height: 105vh;
   padding-left: 16px;
   padding-right: 16px;
   position: relative;
@@ -175,22 +184,6 @@ input.search:focus ~ .place-holder-custom {
   overflow: hidden;
 }
 
-/* .place-holder-custom {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  z-index: -1;
-  font-size: 20px;
-  margin-left: 10px;
-  color: #888e98;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-} */
-
 .search-icon {
   padding: 8px 16px;
   cursor: pointer;
@@ -222,6 +215,10 @@ input.search:focus ~ .place-holder-custom {
   justify-content: center;
   margin-right: 8px;
   margin-left: 24px;
+}
+
+.login-button:hover {
+  color: #ea6016 !important;
 }
 
 .register-button {
@@ -469,12 +466,14 @@ input.search:focus ~ .place-holder-custom {
 /* custome slicks dot */
 .movie .slick-dots {
   height: 100%;
+  width: fit-content;
   display: flex !important;
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-start;
-  z-index: 99 !important;
   padding-top: 300px;
+  z-index: 9;
+  right: 0;
 }
 
 .movie .slick-dots li button:before {
@@ -500,6 +499,11 @@ input.search:focus ~ .place-holder-custom {
   margin: 0 100px !important;
 }
 
+.movie .slick-list {
+  z-index: 9;
+}
+
+/* rank slider */
 .rank-wrap {
   margin-top: -100px;
 }
@@ -507,7 +511,7 @@ input.search:focus ~ .place-holder-custom {
 .header-text-wrap {
   position: relative;
   padding-left: 20px;
-  margin: 28px 0 20px 0;
+  margin: 35px 0 20px 0;
 }
 
 .text-header::before {
@@ -517,11 +521,120 @@ input.search:focus ~ .place-holder-custom {
   height: 30px;
   background: linear-gradient(180deg, #f80, #ea3c2a);
   border-radius: 1rem;
-  top: 50%;
+  bottom: -5px;
   transform: translateY(-50%);
   left: 0;
 }
 
-.rank img {
-  margin: 0 10px;
+.text-header span > img {
+  height: 24px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+    brightness(102%) contrast(102%);
+}
+
+.rank .rank-item,
+.slider-item {
+  width: 100%;
+  padding: 10px;
+  position: relative;
+}
+
+.rank .rank-item > a,
+.slider-item > a {
+  position: relative;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.img-card-wrap,
+.img-card-wrap {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s;
+}
+
+.img-card-wrap > img,
+.img-card-wrap > img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.img-card-wrap:hover > img,
+.img-card-wrap:hover > img {
+  transform: scale(1.1);
+}
+
+.img-card-wrap:hover,
+.img-card-wrap:hover {
+  box-shadow: 0 0 14px -1px #ff8800 !important;
+}
+
+.header-text-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* custome arrow */
+.custom-arrow {
+  display: flex;
+}
+
+.custom-arrow .slick-prev,
+.custom-arrow .slick-next {
+  position: relative;
+}
+
+.custom-arrow .slick-arrow:before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  display: block;
+  position: absolute;
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  font-size: 0;
+  line-height: 1;
+  opacity: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.custom-arrow .slick-prev::before {
+  background-image: url("../assets/icons/left-chevron.png");
+  width: 24px;
+  height: 24px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+    brightness(102%) contrast(102%);
+}
+
+.custom-arrow .slick-next::before {
+  background-image: url("../assets/icons/right-chevron.png");
+  width: 24px;
+  height: 24px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+    brightness(102%) contrast(102%);
+}
+
+.custom-arrow .slick-prev {
+  left: -10px;
+}
+
+.custom-arrow .slick-next {
+  right: 0;
+}
+
+.title-card {
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

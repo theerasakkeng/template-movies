@@ -12,6 +12,16 @@ $(".rank").slick({
   slidesToShow: 7,
   arrows: true,
   infinite: false,
+  slidesToScroll: 7,
+  appendArrows: $(".rank-wrap .custom-arrow"),
+});
+
+$(".recommend").slick({
+  slidesToShow: 7,
+  arrows: true,
+  infinite: false,
+  slidesToScroll: 7,
+  appendArrows: $(".slider-content-wrap .custom-arrow"),
 });
 
 //check focu search input
