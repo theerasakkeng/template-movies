@@ -517,11 +517,11 @@ input.search:focus ~ .place-holder-custom {
 .text-header::before {
   content: "";
   position: absolute;
-  width: 6px;
-  height: 30px;
+  width: 8px;
+  height: 40px;
   background: linear-gradient(180deg, #f80, #ea3c2a);
   border-radius: 1rem;
-  bottom: -5px;
+  bottom: -10px;
   transform: translateY(-50%);
   left: 0;
 }
@@ -578,6 +578,43 @@ input.search:focus ~ .place-holder-custom {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.rank-text {
+  position: absolute;
+  top: -27px;
+  left: -1px;
+  font-size: 130px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.rank-text > span {
+  background-image: linear-gradient(178deg, #888 21%, hsla(0, 0%, 71%, 0) 99%);
+  -webkit-text-stroke: 0.5px #c1c0c05e;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rank-text > span.rank1 {
+  background-image: linear-gradient(180deg, #f80 50%, #ff3b0000 80%);
+  -webkit-text-stroke: 0.5px #f80;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rank-text > span.rank2 {
+  background-image: linear-gradient(180deg, #ebac00 54%, #fad40000 83%);
+  -webkit-text-stroke: 0.5px #ebac00;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rank-text > span.rank3 {
+  background-image: linear-gradient(180deg, #47ce7d 54%, #85e37d30 83%);
+  -webkit-text-stroke: 0.5px #47ce7d;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* custome arrow */
