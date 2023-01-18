@@ -3,13 +3,14 @@ $(".main-slider").slick({
   dots: true,
   arrows: false,
   infinite: true,
-  autoplay: false,
+  autoplay: true,
   speed: 800,
   fade: true,
 });
 
 $(".main-slider-mobile").slick({
   arrows: false,
+  autoplay: true,
   centerMode: true,
   centerPadding: "60px",
   slidesToShow: 3,

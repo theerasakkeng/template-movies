@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/custom.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <script src="../js/jquery-3.6.1.min.js"></script>
+    <title>อนิเมะ ออนไลน์</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="nav-wrap">
+        <div class="navbar-left-section">
+            <img src="https://cdn.popsww.com/popsapp/assets/images/icons/logo-pops.png?format=webp" alt="" class="logo">
+            <a href="../index.html">
+                <div>หน้าแรก</div>
+            </a>
+            <a href="../originals/index.html">
+                <div>Originals</div>
+            </a>
+            <a href="">
+                <div>คอมมิค</div>
+            </a>
+            <a href="">
+                <div>อนิเมะ</div>
+            </a>
+            <a href="">
+                <div>NFT</div>
+            </a>
+            <a href="">
+                <div>เพิ่มเติม</div>
+            </a>
+        </div>
+        <div class="navbar-right-section">
+            <div class="input-wrap">
+                <div class="search-wrap">
+                    <input type="text" class="search" placeholder="ค้นหา: ซีรีย์, อนิเมะ, การ์ตูน, รายการ...." />
+                </div>
+                <div class="search-icon">
+                    <img src="../assets/icons/serach.png" alt="">
+                </div>
+            </div>
+            <div class="button-section-wrap">
+                <a href="#" class="login-button">
+                    ลงชื่อเข้าใช้งาน
+                </a>
+                <a href="" class="register-button">สมัครสมาชิก</a>
+            </div>
+            <img src="../assets/icons/Adult-01.webp" alt="" class="icon-avatar">
+            <div class="menu-sidebar">
+                <img src="../assets/icons/menu.png" alt="" onclick="openSideMenu()">
+                <div class="side-bar">
+                    <div class="side-bar-menu-wrap">
+                        <a href="../index.html">
+                            <div class="side-bar-item">
+                                <img src="../assets/icons/home.webp" alt="" width="28px" height="28px">
+                                <div>หน้าแรก</div>
+                            </div>
+                        </a>
+                        <a href="./index.html">
+                            <div class="side-bar-item">
+                                <img src="../assets/icons/original-active.webp" alt="" width="28px" height="28px">
+                                <div>Originals</div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="side-bar-item">
+                                <img src="../assets/icons/comic.webp" alt="" width="28px" height="28px">
+                                <div>คอมมิค</div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="side-bar-item">
+                                <img src="../assets/icons/anime.webp" alt="" width="28px" height="28px">
+                                <div>อนิเมะ</div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="side-bar-item">
+                                <img src="../assets/icons/nft.webp" alt="" width="28px" height="28px">
+                                <div>NFT</div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="side-bar-item">
+                                <img src="../assets/icons/more.webp" alt="" width="28px" height="28px">
+                                <div>เพิ่มเติม</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar mobile top -->
+    <div class="nav-bar-mobile-top-wrap">
+        <div class="nav-bar-mobile-top">
+            <div>POPS Home</div>
+            <div class="search-icon">
+                <img src="../assets/icons/serach.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- navbar mobile bottom -->
+    <div class="nav-bar-mobile-bottom-wrap">
+        <div class="nav-bar-mobile-bottom">
+            <a href="../index.html" style="width: 100% !important; height: 100%;">
+                <div class="nav-bar-item">
+                    <img src="../assets/icons/home.webp" alt="" width="28px" height="28px">
+                    <div>หน้าแรก</div>
+                </div>
+            </a>
+            <a href="../originals/index.html" style="width: 100% !important; height: 100%;">
+                <div class="nav-bar-item">
+                    <img src="../assets/icons/original-active.webp" alt="" width="28px" height="28px">
+                    <div>Originals</div>
+                </div>
+            </a>
+            <a href="" style="width: 100% !important; height: 100%;">
+                <div class="nav-bar-item">
+                    <img src="../assets/icons/comic.webp" alt="" width="28px" height="28px">
+                    <div>คอมมิค</div>
+                </div>
+            </a>
+            <a href="" style="width: 100% !important; height: 100%;">
+                <div class="nav-bar-item">
+                    <img src="../assets/icons/anime.webp" alt="" width="28px" height="28px">
+                    <div>อนิเมะ</div>
+                </div>
+            </a>
+            <a href="" style="width: 100% !important; height: 100%;">
+                <div class="nav-bar-item">
+                    <img src="../assets/icons/nft.webp" alt="" width="28px" height="28px">
+                    <div>NFT</div>
+                </div>
+            </a>
+            <a href="" style="width: 100% !important; height: 100%;">
+                <div class="nav-bar-item">
+                    <img src="../assets/icons/more.webp" alt="" width="28px" height="28px">
+                    <div>เพิ่มเติม</div>
+                </div>
+            </a>
+            <a href="" style="width: 100% !important; height: 100%;">
+                <div class="nav-bar-item">
+                    <img src="../assets/icons/setting.webp" alt="" width="28px" height="28px">
+                    <div>ตั้งค่า</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- bar section -->
+    <div class="section-menu-bar">
+        <div class="section-menu-bar-item active">ตอน</div>
+        <div class="section-menu-bar-item">ดูเพิ่มเติม</div>
+        <div class="section-menu-bar-item">คอเมนต์</div>
+    </div>
+    <div class="main-wrapper" style="margin-top: 20px;">
+        <div class="content-anime-container">
+            <!-- <div>
+                <input type="select">
+            </div> -->
+            <a href="">
+                <div class="anime-ep-wrap">
+                    <div class="anime-img">
+                        <img src="../assets/banner/hk_ep1.webp" alt="">
+                    </div>
+                    <div class="anime-detail-wrap">
+                        <div class="anime-detail-top">Haikyu!! ตอนที่ 1</div>
+                        <div class="anime-detail-bottom">
+                            <div>
+                                <img src="../assets/icons/time.svg" alt="" width="16px" height="16px"
+                                    style="margin-right: 5px;">
+                                <span>24 mins</span>
+                            </div>
+                            <img src="../assets/icons/add.svg">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="anime-ep-wrap">
+                    <div class="anime-img">
+                        <img src="../assets/banner/hk_ep1.webp" alt="">
+                    </div>
+                    <div class="anime-detail-wrap">
+                        <div class="anime-detail-top">Haikyu!! ตอนที่ 1</div>
+                        <div class="anime-detail-bottom">
+                            <div>
+                                <img src="../assets/icons/time.svg" alt="" width="16px" height="16px"
+                                    style="margin-right: 5px;">
+                                <span>24 mins</span>
+                            </div>
+                            <img src="../assets/icons/add.svg">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="anime-ep-wrap">
+                    <div class="anime-img">
+                        <img src="../assets/banner/hk_ep1.webp" alt="">
+                    </div>
+                    <div class="anime-detail-wrap">
+                        <div class="anime-detail-top">Haikyu!! ตอนที่ 1</div>
+                        <div class="anime-detail-bottom">
+                            <div>
+                                <img src="../assets/icons/time.svg" alt="" width="16px" height="16px"
+                                    style="margin-right: 5px;">
+                                <span>24 mins</span>
+                            </div>
+                            <img src="../assets/icons/add.svg">
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="anime-ep-wrap">
+                    <div class="anime-img">
+                        <img src="../assets/banner/hk_ep1.webp" alt="">
+                    </div>
+                    <div class="anime-detail-wrap">
+                        <div class="anime-detail-top">Haikyu!! ตอนที่ 1</div>
+                        <div class="anime-detail-bottom">
+                            <div>
+                                <img src="../assets/icons/time.svg" alt="" width="16px" height="16px"
+                                    style="margin-right: 5px;">
+                                <span>24 mins</span>
+                            </div>
+                            <img src="../assets/icons/add.svg">
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</body>
+
+</html>
