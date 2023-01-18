@@ -379,12 +379,51 @@ input.search:focus ~ .place-holder-custom {
   width: 100%;
 }
 
-.movie {
+.main-slider-mobile {
+  min-height: 100%;
+  display: none !important;
+}
+
+.main-slider-mobile-item {
+  transition: 0.1s;
+}
+
+.main-slider-mobile-item > a > img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.main-slider-mobile-item.slick-slide.slick-current.slick-active.slick-center {
+  transform: scale(1);
+}
+
+.main-slider-mobile-item.slick-slide {
+  transform: scale(0.9);
+}
+
+@media (max-width: 600px) {
+  .head-slider {
+    margin-top: 52px;
+    width: 100%;
+    min-height: 100px;
+  }
+  .main-slider {
+    display: none !important;
+  }
+  .main-slider-mobile {
+    display: block !important;
+  }
+  .rank-wrap {
+    margin-top: 0px !important;
+  }
+}
+
+.main-slider {
   width: 100%;
   height: 100%;
 }
 
-.movie-slider-item::before {
+.main-slider-item::before {
   content: "";
   position: absolute;
   background: radial-gradient(
@@ -408,13 +447,13 @@ input.search:focus ~ .place-holder-custom {
   bottom: 0;
 }
 
-.movie-slider-item {
+.main-slider-item {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-.movie-slider-item > img {
+.main-slider-item > img {
   width: 100%;
   height: 100%;
 }
@@ -464,7 +503,7 @@ input.search:focus ~ .place-holder-custom {
 }
 
 /* custome slicks dot */
-.movie .slick-dots {
+.main-slider .slick-dots {
   height: 100%;
   width: fit-content;
   display: flex !important;
@@ -476,7 +515,7 @@ input.search:focus ~ .place-holder-custom {
   right: 0;
 }
 
-.movie .slick-dots li button:before {
+.main-slider .slick-dots li button:before {
   font-size: 10px !important;
   width: 16px;
   height: 16px;
@@ -488,18 +527,18 @@ input.search:focus ~ .place-holder-custom {
   color: #5a5c5e;
 }
 
-.movie .slick-dots li.slick-active button:before {
+.main-slider .slick-dots li.slick-active button:before {
   color: #ea6016;
   border: 1px solid #ea6016;
   border-radius: 50%;
   opacity: 1;
 }
 
-.movie .slick-dots li {
+.main-slider .slick-dots li {
   margin: 0 100px !important;
 }
 
-.movie .slick-list {
+.main-slider .slick-list {
   z-index: 9;
 }
 
