@@ -12,7 +12,7 @@ a:hover {
 }
 
 .main-wrapper {
-  min-height: 105vh;
+  /* min-height: 105vh; */
   padding-left: 16px;
   padding-right: 16px;
   position: relative;
@@ -80,7 +80,7 @@ a:hover {
 }
 
 .active {
-  color: #ea6016;
+  color: #ea6016 !important;
 }
 
 .logo {
@@ -720,8 +720,114 @@ input.search:focus ~ .place-holder-custom {
 }
 
 /* detail page */
+.header-logo-anime {
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-head-wrap {
+  overflow: hidden;
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header-logo-anime::before {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  top: -120%;
+  right: -67%;
+  bottom: -35%;
+  margin: 0;
+  left: -20%;
+  padding: 0;
+  box-shadow: inset 25vw -4vw 1000px 371px #141414;
+  border-radius: 50%;
+}
+
+.detail-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9;
+}
+
+.detail-layer-inner {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 1376px !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 70px 0;
+}
+
+.anime-head-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.detail-layer-inner-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-layer-inner-bottom-left {
+  width: 60%;
+}
+
+.tools-button a:first-child {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.detail-layer-inner-bottom-right {
+  color: #bcbcbcbc;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.detail-layer-inner-bottom-right span {
+  color: #ffffff;
+}
+
+.tools-button {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.anime-description {
+  font-size: 20px;
+  color: #bcbcbcbc;
+}
+
+.anime-description span {
+  color: #ffffff;
+}
+
 .section-menu-bar {
-  margin-top: 100px;
   width: 100%;
   background-color: #242424;
   display: flex;
@@ -741,7 +847,7 @@ input.search:focus ~ .place-holder-custom {
 }
 
 .content-anime-container {
-  background: #1f1f1f;
+  background-color: #1f1f1f;
   border-radius: 16px;
   padding: 32px;
   max-width: 770px;
@@ -786,6 +892,10 @@ input.search:focus ~ .place-holder-custom {
 .anime-detail-top {
   font-size: 20px;
   font-weight: bold;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .anime-detail-bottom {
@@ -803,4 +913,86 @@ input.search:focus ~ .place-holder-custom {
   color: #808080;
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 600px) {
+  .content-anime-container {
+    padding: 0px;
+    background-color: transparent;
+  }
+
+  .anime-detail-top {
+    font-size: 16px;
+  }
+
+  .anime-detail-wrap {
+    width: 50%;
+  }
+
+  .anime-img {
+    width: 50%;
+  }
+
+  .detail-layer-inner-bottom {
+    flex-direction: column-reverse;
+  }
+
+  .detail-layer-inner-bottom-left,
+  .detail-layer-inner-bottom-right {
+    width: 100%;
+  }
+
+  .detail-layer-inner-bottom-right {
+    margin-bottom:  20px;
+  }
+
+  .tools-button {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .img-head-wrap {
+    width: 100%;
+    height: 70%;
+  }
+
+  .header-logo-anime::before {
+    display: none;
+  }
+
+  .header-logo-anime::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    bottom: 0;
+    background: linear-gradient(
+      180deg,
+      #141414 0,
+      #141414 25%,
+      hsla(0, 0%, 8%, 0) 51%,
+      #141414 85%,
+      #141414 100%
+    );
+  }
+
+  .detail-layer {
+    top: unset;
+    bottom: -54px !important;
+  }
+
+  .detail-layer-inner-wrap {
+    background-color: #303030;
+    padding: 0 25px 25px 25px;
+    border-radius: 5px;
+  }
+
+  .header-logo-anime {
+    height: 80vh;
+  }
+
+  .anime-head-title {
+    margin-top: -25px;
+  }
 }
