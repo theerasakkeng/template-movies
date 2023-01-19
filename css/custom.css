@@ -83,6 +83,10 @@ a:hover {
   color: #ea6016 !important;
 }
 
+.active:hover {
+  color: #ea6016 !important;
+}
+
 .logo {
   max-width: 120px;
   max-height: 42px;
@@ -1112,4 +1116,83 @@ input.search:focus ~ .place-holder-custom {
 
 .detail-layer-inner-bottom-right.player-page div {
   margin-bottom: 10px;
+}
+
+/* footer */
+#footer-anime {
+  background-color: #1f1f1f;
+}
+
+.footer-section-wrap {
+  margin-top: 80px;
+  width: 100%;
+}
+
+.footer-inner {
+  width: 100%;
+  padding: 50px 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left-wrap {
+  width: 60%;
+}
+
+.footer-right-wrap {
+  width: 25%;
+  font-size: 14px;
+}
+
+.footer-left-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-left-left {
+  margin-right: 40px;
+}
+
+.footer-left-left,
+.footer-left-left {
+  width: 50%;
+}
+
+.footer-left-right {
+  display: flex;
+}
+
+.footer-menu-left,
+.footer-menu-right {
+  width: 125px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-menu-left div,
+.footer-menu-right div {
+  margin-bottom: 10px;
+}
+
+.footer-menu-left div > a:hover,
+.footer-menu-right div > a:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 1000px) {
+  .footer-right-wrap {
+    width: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-right-wrap,
+  .footer-left-wrap {
+    width: 100%;
+  }
+
+  .footer-section-wrap {
+    padding-bottom: 50px;
+  }
 }
