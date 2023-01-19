@@ -102,7 +102,7 @@ a:hover {
 
 .navbar-left-section > *:hover {
   cursor: pointer;
-  color: #ea6016;
+  color: #ea6016 !important;
 }
 
 @media (max-width: 1400px) {
