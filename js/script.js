@@ -156,3 +156,28 @@ const openSideMenu = () => {
     elemOpenMenu.classList.remove("open");
   }
 };
+
+//change menu detail
+document.getElementById("ep").addEventListener("change", (e) => {
+  if (e.target.checked) {
+    document.querySelector(".ep-label").classList.add("active");
+    document.querySelector(".more-label").classList.remove("active");
+    document.querySelector(".comment-label").classList.remove("active");
+  }
+});
+
+document.getElementById("more").addEventListener("change", (e) => {
+  if (e.target.checked) {
+    document.querySelector(".more-label").classList.add("active");
+    document.querySelector(".ep-label").classList.remove("active");
+    document.querySelector(".comment-label").classList.remove("active");
+  }
+});
+
+document.getElementById("comment").addEventListener("change", (e) => {
+  if (e.target.checked) {
+    document.querySelector(".comment-label").classList.add("active");
+    document.querySelector(".ep-label").classList.remove("active");
+    document.querySelector(".more-label").classList.remove("active");
+  }
+});

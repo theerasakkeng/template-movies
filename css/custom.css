@@ -841,14 +841,40 @@ input.search:focus ~ .place-holder-custom {
 }
 
 .section-menu-bar-item {
+  cursor: pointer;
   padding: 16px;
   font-size: 20px;
+  border-bottom: 2px solid transparent;
 }
 
 .section-menu-bar-item.active {
   border-bottom: 2px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(90deg, #f80 0, #ea3c2a 50%, #f80 100%);
+}
+
+#ep:checked + .ep-display {
+  display: block !important;
+}
+
+#more:checked + .more-display {
+  display: block !important;
+}
+
+#comment:checked + .comment-display {
+  display: block !important;
+}
+
+.ep-display {
+  display: none;
+}
+
+.more-display {
+  display: none;
+}
+
+.comment-display {
+  display: none;
 }
 
 .content-anime-container {
