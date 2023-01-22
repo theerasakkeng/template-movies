@@ -1196,3 +1196,25 @@ input.search:focus ~ .place-holder-custom {
     padding-bottom: 50px;
   }
 }
+
+/* select */
+.select-wrap {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+select.select-ss {
+  height: 40px;
+  padding: 5px;
+  min-width: 150px;
+  max-width: 200px;
+  background-color: #242424;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  position: relative;
+}
+
+select.select-ss:focus-visible {
+  outline: none;
+}
