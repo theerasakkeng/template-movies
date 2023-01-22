@@ -625,7 +625,7 @@ input.search:focus ~ .place-holder-custom {
 
 .rank-text {
   position: absolute;
-  top: -27px;
+  top: -5px;
   left: -1px;
   font-size: 130px;
   font-weight: 700;
@@ -667,6 +667,7 @@ input.search:focus ~ .place-holder-custom {
 /* custome arrow */
 .custom-arrow {
   display: flex;
+  z-index: 1;
 }
 
 .custom-arrow .slick-prev,
