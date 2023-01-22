@@ -215,11 +215,18 @@
     </div>
     <!-- bar section -->
     <div class="section-menu-bar">
-        <div class="section-menu-bar-item active">ตอน</div>
-        <div class="section-menu-bar-item">ดูเพิ่มเติม</div>
-        <div class="section-menu-bar-item">คอเมนต์</div>
+        <label for="ep">
+            <div class="section-menu-bar-item ep-label active">ตอน</div>
+        </label>
+        <label for="more">
+            <div class="section-menu-bar-item more-label">ดูเพิ่มเติม</div>
+        </label>
+        <label for="comment">
+            <div class="section-menu-bar-item comment-label">คอเมนต์</div>
+        </label>
     </div>
-    <div class="main-wrapper" style="margin-top: 20px;">
+    <input type="radio" id="ep" name="detail-menu" hidden checked>
+    <div class="main-wrapper ep-display" style="margin-top: 20px;">
         <div class="content-anime-container">
             <div class="select-wrap">
                 <select class="select-ss">
@@ -230,7 +237,7 @@
                     <option value="ซีซั่น 4 Part 2">ซีซั่น 4 Part 2</option>
                 </select>
             </div>
-            <a href="">
+            <a href="../video/haikyu.html">
                 <div class="anime-ep-wrap">
                     <div class="anime-img">
                         <img src="../assets/banner/hk_ep1.webp" alt="">
@@ -248,7 +255,7 @@
                     </div>
                 </div>
             </a>
-            <a href="">
+            <a href="../video/haikyu.html">
                 <div class="anime-ep-wrap">
                     <div class="anime-img">
                         <img src="../assets/banner/hk_ep1.webp" alt="">
@@ -266,7 +273,7 @@
                     </div>
                 </div>
             </a>
-            <a href="">
+            <a href="../video/haikyu.html">
                 <div class="anime-ep-wrap">
                     <div class="anime-img">
                         <img src="../assets/banner/hk_ep1.webp" alt="">
@@ -284,7 +291,7 @@
                     </div>
                 </div>
             </a>
-            <a href="">
+            <a href="../video/haikyu.html">
                 <div class="anime-ep-wrap">
                     <div class="anime-img">
                         <img src="../assets/banner/hk_ep1.webp" alt="">
@@ -302,6 +309,18 @@
                     </div>
                 </div>
             </a>
+        </div>
+    </div>
+    <input type="radio" id="more" name="detail-menu" hidden>
+    <div class="main-wrapper more-display" style="margin-top: 20px;">
+        <div class="content-anime-container">
+            dasdasdasdasd
+        </div>
+    </div>
+    <input type="radio" id="comment" name="detail-menu" hidden>
+    <div class="main-wrapper comment-display" style="margin-top: 20px;">
+        <div class="content-anime-container">
+            dasdasdasdasd
         </div>
     </div>
     <!-- footer -->
