@@ -1255,4 +1255,49 @@ input.search:focus {
   .footer-search-page {
     display: none;
   }
+
+  .search-content-wrap {
+    margin-top: 75px !important;
+  }
+
+  .img-search-wrap > img {
+    width: 50% !important;
+    height: auto;
+  }
+}
+
+.search-content-wrap {
+  margin-top: 100px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.img-search-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.img-search-wrap > img {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.detail-search {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.search-value-wrap {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-suggestion {
+  margin-left: 20px;
+  width: 25%;
 }
