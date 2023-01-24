@@ -237,6 +237,12 @@ document.querySelector(".input-select").addEventListener("focus", () => {
   document.querySelector(".dropdonw-list").style.display = "block";
 });
 
+document.querySelector(".input-select").addEventListener("keypress", (e) => {
+  if(e){
+    e.preventDefault();
+  }
+});
+
 const menuItems = document.querySelectorAll(".dropdonw-item");
 document.querySelector(".input-select").value = menuItems[0].innerText;
 if (document.querySelector(".input-select").value == menuItems[0].innerText) {

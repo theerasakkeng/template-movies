@@ -1677,6 +1677,7 @@ input.input-report:focus {
   cursor: pointer;
   padding: 10px;
   font-size: 20px;
+  caret-color: transparent;
 }
 .input-select:focus {
   outline: none;
