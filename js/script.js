@@ -242,10 +242,8 @@ document.querySelector(".input-select").value = menuItems[0].innerText;
 if (document.querySelector(".input-select").value == menuItems[0].innerText) {
   menuItems[0].classList.add("border-active");
 }
-console.log(menuItems[0].innerText);
 for (let i = 0; i < menuItems.length; i++) {
   menuItems[i].addEventListener("mousedown", (e) => {
-    console.log(e.target.innerText);
     document.querySelector(".input-select").value = e.target.innerText;
     if (document.querySelector(".input-select").value == e.target.innerText) {
       document
@@ -263,15 +261,20 @@ document.querySelector(".input-select").addEventListener("blur", () => {
   document.querySelector(".dropdonw-list").style.display = "none";
 });
 
-document.querySelector(".report").addEventListener("click", () => {
-  document.querySelector(".report-text").style.display = "block";
+let inputReportElems = document.querySelectorAll(".input-report");
+let reportTextElems = document.querySelectorAll(".report-text");
+inputReportElems.forEach((inputReportElem, inputReportElemIndex) => {
+  inputReportElems[inputReportElemIndex].addEventListener("focus", () => {
+    reportTextElems[inputReportElemIndex].classList.add("show-report");
+  });
 });
 
-document.addEventListener("click", (event) => {
-  let reportElem = document.querySelector(".report");
-  if (event.target == reportElem) {
-    document.querySelector(".report-text").style.display = "block";
-  } else {
-    document.querySelector(".report-text").style.display = "none";
-  }
+inputReportElems.forEach((inputReportElem, inputReportElemIndex) => {
+  inputReportElems[inputReportElemIndex].addEventListener("blur", () => {
+    reportTextElems.forEach((reportTextElem, indexReportText) => {
+      setTimeout(() => {
+        reportTextElem.classList.remove("show-report");
+      }, 300);
+    });
+  });
 });
