@@ -267,14 +267,7 @@ inputReportElems.forEach((inputReportElem, inputReportElemIndex) => {
   inputReportElems[inputReportElemIndex].addEventListener("focus", () => {
     reportTextElems[inputReportElemIndex].classList.add("show-report");
   });
-});
-
-inputReportElems.forEach((inputReportElem, inputReportElemIndex) => {
   inputReportElems[inputReportElemIndex].addEventListener("blur", () => {
-    reportTextElems.forEach((reportTextElem, indexReportText) => {
-      setTimeout(() => {
-        reportTextElem.classList.remove("show-report");
-      }, 300);
-    });
+    reportTextElems[inputReportElemIndex].classList.remove("show-report");
   });
 });
