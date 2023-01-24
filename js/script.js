@@ -268,6 +268,8 @@ inputReportElems.forEach((inputReportElem, inputReportElemIndex) => {
     reportTextElems[inputReportElemIndex].classList.add("show-report");
   });
   inputReportElems[inputReportElemIndex].addEventListener("blur", () => {
-    reportTextElems[inputReportElemIndex].classList.remove("show-report");
+    setTimeout(() => {
+      reportTextElems[inputReportElemIndex].classList.remove("show-report");
+    }, 150);
   });
 });
