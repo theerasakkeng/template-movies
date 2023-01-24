@@ -271,6 +271,7 @@ let inputReportElems = document.querySelectorAll(".input-report");
 let reportTextElems = document.querySelectorAll(".report-text");
 inputReportElems.forEach((inputReportElem, inputReportElemIndex) => {
   inputReportElems[inputReportElemIndex].addEventListener("focus", () => {
+    // inputReportElems[inputReportElemIndex].setAttribute('readonly','readonly')
     reportTextElems[inputReportElemIndex].classList.add("show-report");
   });
   inputReportElems[inputReportElemIndex].addEventListener("blur", () => {
