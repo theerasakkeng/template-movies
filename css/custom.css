@@ -1722,3 +1722,41 @@ input.input-report:focus {
     width: 250px;
   }
 }
+
+/* comics page */
+.comics-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.comics-wrap .slider-item {
+  width: 14.28%;
+}
+
+@media (max-width: 1020px) {
+  .comics-wrap .slider-item {
+    width: 20%;
+  }
+}
+
+@media (max-width: 800px) {
+  .comics-wrap .slider-item {
+    width: 25%;
+  }
+}
+
+@media (max-width: 600px) {
+  .comics-wrap .slider-item {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 300px) {
+  .comics-wrap .slider-item {
+    width: 50%;
+  }
+}
+
+.comics-wrap .slider-item .img-card-wrap {
+  height: auto;
+}
